@@ -1,0 +1,19 @@
+{
+    "name": "sergiqg/aws-elb-instances-detector",
+    "description": "Detects all instances attached to a specific AWS ELB",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Sergi Quiñonero",
+            "email": "sergi.q@pa-community.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "sergiqg/aws-elb-instances-detector": "src/"
+        }
+    },
+    "minimum-stability": "dev",
+    "require": {}
+}
