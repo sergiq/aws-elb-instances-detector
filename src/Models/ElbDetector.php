@@ -36,7 +36,7 @@ class ElbDetector
     public function detectInstances(string $elb_name = null, array $configuration = []): void
     {
         $this->setConfiguration($configuration);
-        $this->processElbInformation();
+        $this->processElbInformation($elb_name);
         $this->processInstances();
     }
 
@@ -78,14 +78,15 @@ class ElbDetector
 
     /**
      * Gather all ELB information
+     *
+     * @param string|null $elb_name
      */
-    protected function processElbInformation()
+    protected function processElbInformation(string $elb_name = null)
     {
-        $elb = new ElasticLoadBalancingClient($this->config);
-
+        $elb                   = new ElasticLoadBalancingClient($this->config);
         $this->elb_information = $elb->describeInstanceHealth(
             [
-                'LoadBalancerName' => config('aws_elb_instance_detector.name'),
+                'LoadBalancerName' => $elb_name ?? config('aws_elb_instance_detector.name'),
             ]
         );
     }
