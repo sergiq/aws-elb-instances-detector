@@ -23,7 +23,7 @@
         "laravel": {
             "providers": [
                 "Sergiqg\\AwsElbInstancesDetector\\ElbDetectorServiceProvider\\"
-            ],
+            ]
         }
     }
 }
