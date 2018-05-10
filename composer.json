@@ -11,10 +11,10 @@
     ],
     "autoload": {
         "psr-4": {
-            "sergiqg\\aws-elb-instances-detector\\": "src/"
+            "sergiqg\\AwsElbInstancesDetector\\": "src/"
         }
     },
-    "minimum-stability": "dev",
+    "minimum-stability": "stable",
     "require": {
       "php": "~7.0",
       "illuminate/support": "~5.6"
