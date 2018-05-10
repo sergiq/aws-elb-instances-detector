@@ -22,7 +22,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Sergiqg\\AwsElbInstancesDetector\\ElbDetectorServiceProvider\\"
+                "Sergiqg\\AwsElbInstancesDetector\\ElbDetectorServiceProvider"
             ]
         }
     }
