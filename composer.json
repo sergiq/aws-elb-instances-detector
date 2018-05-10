@@ -2,6 +2,14 @@
     "name": "sergiqg/aws-elb-instances-detector",
     "description": "Detects all instances attached to a specific AWS ELB",
     "type": "library",
+    "keywords": [
+      "laravel",
+      "AWS",
+      "ELB",
+      "EC2",
+      "autodiscover",
+      "ip discover"
+    ],
     "license": "MIT",
     "authors": [
         {
