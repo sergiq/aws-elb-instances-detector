@@ -14,6 +14,16 @@
             "sergiqg\\aws-elb-instances-detector\\": "src/"
         }
     },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Sergiqg\\AwsElbInstancesDetector\\ElbDetectorServiceProvider"
+            ]
+        }
+    },
     "minimum-stability": "dev",
-    "require": {}
+    "require": {
+      "php": "~7.0",
+      "illuminate/support": "~5.6"
+    }
 }
