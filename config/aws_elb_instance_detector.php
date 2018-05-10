@@ -6,7 +6,7 @@ return [
     | ELB Name
     |--------------------------------------------------------------------------
     |
-    | The ELB name
+    | The ELB default name
     */
-    'default-elb-name' => env('AWS_ELB_NAME', ''),
+    'default-elb-name' => env('AWS_ELB_NAME', 'my-default-elb-name'),
 ];
