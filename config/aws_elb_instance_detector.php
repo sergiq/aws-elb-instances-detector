@@ -1,12 +1,20 @@
 <?php
 
 return [
+    'version'         => env('AWS_ELB_VERSION', 'latest'),
+
     /*
     |--------------------------------------------------------------------------
-    | ELB Name
+    | ELB Information
     |--------------------------------------------------------------------------
     |
-    | The ELB default name
+    | The ELB default information
     */
-    'default-elb-name' => env('AWS_ELB_NAME', 'my-default-elb-name'),
+    'name'        => env('AWS_ELB_NAME', 'my-default-elb-name'),
+    'region'      => env('AWS_ELB_REGION', 'my-default-region'),
+    'credentials' => [
+        'key'    => env('AWS_ELB_KEY', 'my-elb-key'),
+        'secret' => env('AWS_ELB_SECRET', 'my-elb-secret'),
+    ],
+
 ];
