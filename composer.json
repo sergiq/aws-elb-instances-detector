@@ -11,7 +11,7 @@
     ],
     "autoload": {
         "psr-4": {
-            "sergiqg/aws-elb-instances-detector": "src/"
+            "sergiqg\\aws-elb-instances-detector\\": "src/"
         }
     },
     "minimum-stability": "dev",
