@@ -57,6 +57,15 @@ class ElbDetector
     }
 
     /**
+     * Returns ELB instances information.
+     * @return array
+     */
+    public function getElbInstances(): array
+    {
+        return $this->elb_information->get('InstanceStates') ?? [];
+    }
+
+    /**
      * Sets the configuration for ELB access.
      *
      * @param array $configuration
